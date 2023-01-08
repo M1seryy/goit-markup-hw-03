@@ -1,3 +1,4 @@
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -30,9 +31,8 @@ body {
   display: flex;
   justify-content: space-around;
   margin: auto;
-
 }
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
 }
@@ -64,8 +64,7 @@ body {
 .header-link-item > a:active {
   color: #404bbf;
 }
-.contacts{
-
+.contacts {
 }
 .details {
   list-style: none;
@@ -158,8 +157,19 @@ body {
 }
 /* ----------------WEBSTUDIO MAIN PAGE------------------ */
 /* ----------------HERO------------------ */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero {
   background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-text {
   width: 494px;
@@ -190,10 +200,22 @@ body {
 }
 
 /* ----------------FEATURES------------------ */
+.container-features {
+  width: 1440px;
+  margin: auto;
+}
 
 .section-features {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-top: 152px;
+  padding-bottom: 120px;
+  margin: 0 156px;
 }
 .features-item {
+  width: 264px;
+  height: 104px;
 }
 
 /* ----------------OUR-WORK------------------ */
