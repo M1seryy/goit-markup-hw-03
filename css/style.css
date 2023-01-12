@@ -38,7 +38,7 @@ h6 {
 /* ----------------HEADER------------------ */
 .container {
   width: 1158px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -318,6 +318,8 @@ h6 {
 .team-list {
   display: flex;
   gap: 24px;
+  margin: 0px;
+  padding: 0px;
 }
 .team-list-item {
   width: 264px;
@@ -340,7 +342,7 @@ h6 {
 .footer {
   background-color: var(--main-text-color);
 
-  padding: 138px 0 100px;
+  padding: 100px 0;
 }
 .footer-logo {
   color: var(--main-text-color);
