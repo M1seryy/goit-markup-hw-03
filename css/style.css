@@ -284,7 +284,6 @@ h6 {
 .work-list {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 120px;
   margin: 0px;
 }
 /* ----------------TEAM------------------ */
