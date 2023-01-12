@@ -29,10 +29,9 @@ h6 {
   font-size: 16px;
 }
 .sub-title {
-  padding-top: 8px;
-
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 /* ----------------PORTFOLIO------------------ */
@@ -40,13 +39,16 @@ h6 {
 .container {
   width: 1158px;
   margin: auto;
+  padding: 0 15px;
   box-sizing: border-box;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .navbar {
   display: flex;
   align-items: center;
 }
-
 .header-logo {
   color: var(--main-text-color);
   font-family: "Raleway", sans-serif;
@@ -64,7 +66,7 @@ h6 {
   list-style: none;
   width: 261px;
   height: 24px;
-  margin-left: 78px;
+  margin: 0 0 0 76px;
   display: flex;
   justify-content: space-between;
 }
@@ -77,7 +79,6 @@ h6 {
 .header-content {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 .contacts {
 }
@@ -101,19 +102,15 @@ h6 {
 
 /* ----------------BUTTONS------------------ */
 .btn-list {
-  width: 586px;
-  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 96px 0 72px;
+  padding-bottom: 72px;
   margin: 0 auto;
 }
 .btn-list-btn {
   padding: 12px 24px;
-  width: 126px;
-  height: 48px;
   text-align: center;
   color: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -124,7 +121,6 @@ h6 {
   background: #f4f4fd;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(24 / 16);
 }
 .btn-list-btn:active {
@@ -138,15 +134,19 @@ h6 {
 .images {
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .img-item {
-  box-sizing: border-box;
-  width: 360px;
+  /* box-sizing: border-box; */
+  width: calc((100% - 54px) / 3);
   height: 420px;
   border: 1px solid #e7e9fc;
 }
+
 .image {
-  width: 360px;
   background: #ffffff;
 }
 .img-title {
@@ -165,10 +165,7 @@ h6 {
   color: #434455;
 }
 /* ----------------FOOTER------------------ */
-.footer {
-  background: #2e2f42;
-  height: 310px;
-}
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -176,7 +173,7 @@ h6 {
   font-size: 18px;
   line-height: 21px;
   color: #f4f4fd;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer > a > span {
   color: var(--btn-color);
@@ -193,7 +190,6 @@ h6 {
 .footer-content {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
 }
 /* ----------------WEBSTUDIO MAIN PAGE------------------ */
 /* ----------------HERO------------------ */
@@ -241,21 +237,23 @@ h6 {
 }
 
 /* ----------------FEATURES------------------ */
-
+.features {
+  padding: 120px 0 120px;
+}
 .section-features {
+  padding: 0px;
   display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-
-  padding: 152px 0 120px;
+  gap: 24px;
   margin: 0px;
 }
 .features-item {
   width: 264px;
+  height: 104px;
 }
 
 /* ----------------OUR-WORK------------------ */
 .our-work {
+  padding-bottom: 120px;
 }
 
 .work-title {
@@ -265,8 +263,7 @@ h6 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
-  padding-bottom: 72px;
-  margin: 0px;
+  margin-bottom: 72px;
 }
 .work-item {
   box-sizing: border-box;
@@ -336,6 +333,8 @@ h6 {
 
 .footer {
   background-color: var(--main-text-color);
+
+  padding: 138px 0 100px;
 }
 .footer-logo {
   color: var(--main-text-color);
@@ -353,24 +352,10 @@ h6 {
   letter-spacing: 0.02em;
   color: #e7e9fc;
 }
-.first-row {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
+
 .card-content {
   padding: 32px 0 32px 16px;
 }
-
-.second-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 48px;
-}
-
-.third-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 48px;
-  padding-bottom: 120px;
+.portfolio-section {
+  padding: 96px 0 120px;
 }
